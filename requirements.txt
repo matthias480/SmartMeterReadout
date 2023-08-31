@@ -1,0 +1,6 @@
+beautifulsoup4
+cryptography
+gurux_dlms
+pyserial
+lxml
+cchardet

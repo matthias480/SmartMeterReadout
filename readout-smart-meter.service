@@ -1,0 +1,12 @@
+[Unit]
+Description=Smart Meter readout script
+After=syslog.target network.target multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/readout-smart-meter.py
+StandardOutput=null
+Restart=always
+RestartSec=6s
+
+[Install]
+WantedBy=multi-user.target
