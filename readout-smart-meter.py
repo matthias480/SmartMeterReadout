@@ -140,11 +140,11 @@ while not signalHandler.shutdown_requested():
             continue
 
         if len(data) < FRAME_LENGTH and data[0:1] == FRAME1_START_BYTE and data[1:2] == data[2:3]:
-            log("Incomplete message received. Try to get rest... Len: " + str(len(data)))
+            # log("Incomplete message received. Try to get rest... Len: " + str(len(data)))
             rest = ser.read(size=FRAME_LENGTH - len(data))
             if len(data) + len(rest) == FRAME_LENGTH:
                 data = data + rest
-                log("Incomplete message completed. Len: " + str(len(data)))
+                # log("Incomplete message completed. Len: " + str(len(data)))
 
         if len(data) < FRAME_LENGTH or data[0:1] != FRAME1_START_BYTE or data[-1:] != FRAME2_END_BYTE:
             log("Incomplete message received. Synchronize...")
