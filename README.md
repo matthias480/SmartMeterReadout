@@ -255,7 +255,7 @@ ReactiveEnergyOut: 808.028 kvar
 ### Datetime Explanation
 
 ```
-07 E7            <-- Full year, 0x07E/ = 2023
+07 E7            <-- Full year, 0x07E7 = 2023
 06               <-- Month, June
 12               <-- Day of month, 0x12 = 18
 02               <-- Day of week, Tuesday
