@@ -1,12 +1,20 @@
 # SmartMeterReadout
 
 This is an example project offering a Python script which can be used to readout the Smart Meter KAIFA MA309M.  
-The script is ready to be used for reading the current Smart Meter KAIFA MA309M(H) from vorarlberg netz.  
+The script is ready to be used for reading the current Smart Meter KAIFA MA309M(H) from vorarlberg netz (VKW).  
 You just need to insert your decryption key - received by vorarlberg netz (https://webportal.vorarlbergnetz.at) -
 in the configuration section (see [line 36](readout-smart-meter.py#L36)) and process the data according to your needs. Here it is printed to console ([line 208](readout-smart-meter.py#L208)).
 
 For other grid operators some adaptations probably need to be made -
 e.g. with regard to the frame length (see [line 31](readout-smart-meter.py#L31)) as the length depends on the provided meter information.
+
+### GERMAN:
+
+Dies ist ein Beispielprojekt, in welchem ich ein Python-Skript zur Verfügung stelle, mit dem der Smart Meter KAIFA MA309M ausgelesen werden kann.  
+Das Skript ist einsatzbereit und kann zum Auslesen des aktuellen Smart Meters KAIFA MA309M(H) von vorarlberg netz (VKW) verwendet werden.  
+Sie müssen lediglich den Schlüssel für die Kundenschnittstelle, welchen Sie von vorarlberg netz (https://webportal.vorarlbergnetz.at) erhalten haben, im Konfigurationsabschnitt (siehe [Zeile 36](readout-smart-meter.py#L36)) hinterlegen und die Daten entsprechend Ihren Anforderungen verarbeiten. In diesem Beispielskript werden sie einfach auf der Konsole ausgegeben ([Zeile 208](readout-smart-meter.py#L208)).
+
+Für andere Netzbetreiber müssen möglicherweise Anpassungen vorgenommen werden, z. B. in Bezug auf die Frame-Länge (siehe [Zeile 31](readout-smart-meter.py#L31)), da die Länge von den vom Zähler bereitgestellten Informationen abhängt.
 
 ## Successfully tested with
 
