@@ -3,4 +3,7 @@ cryptography
 gurux_dlms
 pyserial
 lxml
+# Installing cchardet in Python 3.11+ will result in the error "longintrepr.h: No such file or directory".
+# As long as the author has not fixed it, installing cython solves the problem.
+cython
 cchardet
